@@ -41,4 +41,9 @@ This is my approach for emotion recognition on video. This project consist of tw
 - one for **find face** in frame on video (multiface possible, number of faces - argument for run file, see next chapter)
 - second for emotion recognition. **ResNet** architecture used.
 
+This project from my coursework in online university skillbox. From there dataset taken, quality of this dataset not so good. Best **accuracy** which i get - around 40%. But i did flexibale code, there many adjustments. If you want to train this model on your own dataset (or on any dataset from net) - you can adjust 10 hyperparameters. Also simple interface done, so - its can be use like simple app. For possibilities with this code pls continue read this readme.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- USE PRETRAINED MODEL -->
+## Use pretrained model
