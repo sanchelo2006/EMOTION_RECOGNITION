@@ -52,5 +52,30 @@ Here is explanation how to run the model on your maschine which i trained alread
 
 ### requirements for enviroment
 
-There is file **requirements.txt** with all require libraries for this project. Its pip created file.\
-For install on your enviroment - use this command: **pip install -r requirements.txt**
+There are 2 files **requirements_pip.txt** and **requirements_conda.txt** with all require libraries for this project.\
+If your enviroment installed with pip - use this command: **pip install -r requirements_pip.txt**.\
+If your envirement created with conda - use this command: **conda install --file requirements_conda.txt**.
+
+### required files
+
+for run this model you need following files in folder from there you run this model:
+- **res10_300x300_ssd_iter_140000.caffemodel** and **deploy.prototxt**. This 2 files need for the model which is responsable for find face in frame on video.
+- **zero_detect_face_video.py**. This file for run model. Its have 2 required arguments and 5 with default value.
+
+  required arguments:
+  - p (prototxt). Path to the file **deploy.prototxt**
+  - m (model). Path to the file **res10_300x300_ssd_iter_140000.caffemodel**\
+
+  not requred arguments:
+  - n (numberpixels). Number of pixel for shift. When face moving in frame - its need for correct showing prediction of emotion, otherwise its will be always new face. Default = 60
+  - f (frames). Number of frames for averaging prediction. Default = 3
+  - c (confidence). Minimum threshold for prediction (predictions with less threshold will not take into account). Default = 0.5
+  - v (camera). This is special for openCV library, number of camera for grab video. (0 is for inbuild camera of computer). Default = 0
+  - l (maxfaces). Max number of faces in frame. Default = 5
+
+### run file
+
+Run the file **zero_detect_face_video.py** from command line with required arguments (and, if you need other values, other arguments).
+
+Just simple example:
+- python zero_detect_face_video.py -p /PATH_TO_YOUR_FOLDER/deploy.prototxt -m /PATH_TO_YOUR_FOLDER/res10_300x300_ssd_iter_140000.caffemodel
