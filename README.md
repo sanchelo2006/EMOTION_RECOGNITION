@@ -47,3 +47,10 @@ This project from my coursework in online university skillbox. From there datase
 
 <!-- USE PRETRAINED MODEL -->
 ## Use pretrained model
+
+Here is explanation how to run the model on your maschine which i trained already.
+
+### requirements for enviroment
+
+There is file **requirements.txt** with all require libraries for this project. Its pip created file.\
+For install on your enviroment - use this command: **pip install -r requirements.txt**
