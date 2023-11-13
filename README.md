@@ -79,3 +79,14 @@ Run the file **zero_detect_face_video.py** from command line with required argum
 
 Just simple example:
 - python zero_detect_face_video.py -p /PATH_TO_YOUR_FOLDER/deploy.prototxt -m /PATH_TO_YOUR_FOLDER/res10_300x300_ssd_iter_140000.caffemodel
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- TRAIN MODEL ON CUSTOM DATASET -->
+## Train model on custom dataset
+
+Also you can train prebuid model with ResNet architecture on other dataset. The main point is - that you can change hyper parameters.
+
+### clean dataset
+
+This folder also have code for cleaning dataset. All for it inside the file **Preprocessing.py**. This file like a module, you need to import it to your code. Consist of 2 classes: one for augmentation dataset, second for balancing dataset.
