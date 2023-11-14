@@ -41,7 +41,10 @@ This is my approach for emotion recognition on video. This project consist of tw
 - one for **find face** in frame on video (multiface possible, number of faces - argument for run file, see next chapter)
 - second for emotion recognition. **ResNet** architecture used.
 
-This project from my coursework in online university skillbox. From there dataset taken, quality of this dataset not so good. Best **accuracy** which i get - around 40%. But i did flexibale code, there many adjustments. If you want to train this model on your own dataset (or on any dataset from net) - you can adjust 10 hyperparameters. Also simple interface done, so - its can be use like simple app. For possibilities with this code pls continue read this readme.
+This project from my coursework in online university skillbox. From there dataset taken, quality of this dataset not so good. Best **accuracy** which i get - around 40%. But i did flexibale code, there many adjustments. If you want to train this model on your own dataset (or on any dataset from net) - you can adjust 10 hyperparameters. Also simple interface done, so - its can be use like simple app. For possibilities with this code pls continue read this readme.\
+This model trained for 9 emotion: {0: 'anger', 1: 'contempt', 2: 'disgust', 3: 'fear', 4: 'happy', 5: 'neutral', 6: 'sad', 7: 'surprise', 8: 'uncertain'}\
+
+P.S. All comments in code in Russian language. If somebody interest - i can translate and change to English.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,3 +93,13 @@ Also you can train prebuid model with ResNet architecture on other dataset. The 
 ### clean dataset
 
 This folder also have code for cleaning dataset. All for it inside the file **Preprocessing.py**. This file like a module, you need to import it to your code. Consist of 2 classes: one for augmentation dataset, second for balancing dataset.
+
+Important thing! All your images should be in folders with name of emotion. Function in class **PreprocessDataset** (in module **Preprocessing.py**) has arguments - path tot the folders.\
+Folders should be like this:
+
+-MAIN_FOLDER
+    -ANGER
+    -CONTEMPT
+    ...
+    -UNCERTAIN
+
