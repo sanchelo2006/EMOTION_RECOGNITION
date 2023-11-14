@@ -25,7 +25,6 @@
       <ul>
         <li><a href="#clean-dataset">Clean dataset</a></li>
         <li><a href="#train-model">Train model</a></li>
-        <li><a href="#save-result">Save result</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -108,3 +107,18 @@ Possibilities of module clean:
 - balance dataset. If you have much difference in quantity of images of different emotions - this code will balance your dataset by implement augmentation.
 
 ### train model
+
+For train model you can use file **ModelFace2.ipynb**. Its Jupiter Notebook file.
+
+You can adjust 10 hyperparameters:
+
+- **start_filters**. Number of filters in first conv layer (in all following layers in one block quantity doubled)
+- **drop_conv**. Factor for dropout layer in conv layers
+- **drop_fc**. Factor for dropout layer in FC layers
+- **BATCH_SIZE**. Size of batch
+- **IMG_SHAPE**. Size of image for imagedatagenerator
+- **learning_rate**. Just a learning rate
+- **act_func**. Activation function used in neural net
+- **initializer**. Weight initializer
+- **fc_filters**. Number of filters for FC layers
+- **conv_size**. Size of convolution
