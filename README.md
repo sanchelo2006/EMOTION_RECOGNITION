@@ -103,3 +103,8 @@ Folders should be like this:
     ...
 |  ---UNCERTAIN
 ```
+Possibilities of module clean:
+- crop faces on image (for this used same neural net for find face from openCV zoo)
+- balance dataset. If you have much difference in quantity of images of different emotions - this code will balance your dataset by implement augmentation.
+
+### train model
