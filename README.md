@@ -96,10 +96,10 @@ This folder also have code for cleaning dataset. All for it inside the file **Pr
 
 Important thing! All your images should be in folders with name of emotion. Function in class **PreprocessDataset** (in module **Preprocessing.py**) has arguments - path tot the folders.\
 Folders should be like this:
-
--MAIN_FOLDER
-    -ANGER
-    -CONTEMPT
+```
++---MAIN_FOLDER
+|  ---ANGER
+|  ---CONTEMPT
     ...
-    -UNCERTAIN
-
+|  ---UNCERTAIN
+```
