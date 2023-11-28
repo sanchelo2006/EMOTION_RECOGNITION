@@ -75,6 +75,8 @@ for run this model you need following files in folder from there you run this mo
   - v (camera). This is special for openCV library, number of camera for grab video. (0 is for inbuild camera of computer). Default = 0
   - l (maxfaces). Max number of faces in frame. Default = 5
 
+  off course you also need model for emotion recognition. All requred files seated in folder model_emotion
+
 ### run file
 
 Run the file **zero_detect_face_video.py** from command line with required arguments (and, if you need other values, other arguments).
